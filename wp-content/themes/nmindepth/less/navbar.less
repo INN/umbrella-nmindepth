@@ -1,0 +1,17 @@
+/**
+ * Change the background color of the main navbar without affecting the sticky nav or the dropdowns off the main nav
+ */
+
+.navbar {
+  li.dropdown .dropdown-menu li a {
+    color: @navbarBackground;
+
+    &:hover {
+      color: @navbarLinkColorHover;
+    }
+  }
+}
+#main-nav.navbar {
+  border-top: 0;
+  border-bottom: 0;
+}

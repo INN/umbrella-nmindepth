@@ -1,0 +1,125 @@
+/* ==========================================================================
+Homepage Styles
+-----------------------------
+- GENERAL STYLES
+#homepage-top
+  * TOP STORY HERO
+  * HOMEPAGE RIGHT RAIL
+#homepage-catboxes
+#homepage-bottom
+========================================================================== */
+@import "../../../less/_variables.less";
+
+#content a {
+  color: #333;
+  &:hover {
+    color: #454545;
+  }
+}
+#homepage-top {
+  .span8 {
+    img {
+	  width: 100%;
+	  max-width: 100%;
+    }
+    h2 {
+	  font-size: 36px;
+	  margin-bottom: 0.25em;
+    }
+    .byline {
+	  display: block;
+    }
+    p {
+	  margin-bottom: 0;
+    }
+    .featured-container-caption {
+      background: @white;
+      padding: 20px;
+      margin: -40px 3% 0;
+      position: relative;
+    }
+    @media (max-width: 768px)
+  }
+  
+  .span4 {
+    h2 {
+	  font-size: 28px;
+    }
+  }
+}
+.stories #homepage-top article {
+  margin-bottom: 0;
+}
+.stories article {
+  border-bottom: 0;
+}
+
+#homepage-bottom-row {
+  display: block;
+  margin-top: 2em;
+  border-top: 1px solid @gridline;
+  padding-top: 2em;
+  list-style-type: none;
+  @media ( max-width: 768px ) {
+    .span4, .span8 {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+#homepage-bottom {
+  margin-top: 0;
+  .widget {
+    padding: 0;
+    width: 46.5%;
+  }
+}
+
+/* ==========================================================================
+Responsive Media Queries
+========================================================================== */
+
+@media (max-width: 768px) {
+  #homepage-top .span8,
+  #homepage-bottom div.span4,
+  #homepage-bottom div.span6 {
+    width: 100%;
+    display: block;
+  }
+  #homepage-top {
+	width: 95%;
+	padding: 0 2.5%;
+    .span8 .featured-container-caption {
+      padding: 0 0 24px;
+      margin: 12px 0 24px;
+	  border-bottom: 1px solid @gridline;
+    }
+  }
+  #homepage-bottom-row {
+    margin-top: 0;
+    padding-top: 24px;
+  }
+  #homepage-bottom {
+	.widget {
+      margin-bottom: 24px;
+    }
+    .widget.even,
+    .widget.odd {
+	  width: 100%;
+    }
+  }
+}
+/* small largo override */
+@media (max-width: 480px) {
+  #homepage-top {
+    article {
+      margin-top: 0;
+    }
+    .span8 h2 {
+	  font-size: 24px;
+    }
+    .span4 hr {
+	  font-size: 24px;
+    }
+  }
+}

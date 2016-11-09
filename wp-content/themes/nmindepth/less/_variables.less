@@ -1,0 +1,40 @@
+/* ==========================================================================
+New Mexico In-Depth Theme Variables
+========================================================================== */
+/* COLORS */
+@black: #131921; // modified black (NEW)
+@white: #FFF;
+@gridline: #e8e8e8;
+@brand: #1ba5a9; // teal
+
+@sans: "adelle-sans", "Helvetica Neue", Helvetica, sans-serif;
+@serif: "adelle", Georgia, serif; // NOTE: font-weight:500 applied below
+
+/* ==========================================================================
+New Mexico In-Depth Theme Utilities
+========================================================================== */
+
+.nm-f-top {
+  border-top: 1px solid @gridline;
+}
+
+.nm-f-right {
+  border-right: 1px solid @gridline;
+}
+
+.nm-f-btm {
+  border-bottom: 1px solid @gridline;
+}
+
+.nm-f-left {
+  border-left: 1px solid @gridline;
+}
+
+/**
+ * Largo navbar color changes
+ * These redefine colors in largo's navbar-common.less and navbar-sticky.less, and so must be included before them in less/nmindepth.less
+ */
+@navbarBackground: @brand;
+@navbarText: @white;
+@navbarLinkColor: @navbarText;
+@navbarLinkColorHover: lighten(@navbarText,10%);

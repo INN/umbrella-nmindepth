@@ -1,0 +1,38 @@
+/**
+ * Styles for New Mexico in Depth
+ */
+
+/* Largo essentials */
+@import "reset.less";
+@import "variables.less";
+@import "mixins.less";
+
+/**
+ * Variables and utilities
+ */
+@import "_variables.less";
+
+/* Largo nav styles */
+@import "navbar-common.less";
+@import "navbar-sticky.less";
+@import "footer.less";
+
+/* NMID-specific navbar coloration */
+@import "navbar.less";
+
+#content {
+  .widgettitle,
+  .stories h3.widgettitle {
+    margin-bottom: 1em;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff !important;
+    a {
+      color: #fff !important;
+    }
+  }
+}
+.widget.largo-recent-comments p.comment-excerpt {
+  font-size: 1.2em;
+}
